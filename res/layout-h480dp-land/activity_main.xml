@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/playerName"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/strName"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/strHp"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toStartOf="@+id/textMax"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/strMax"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/hpCurrent"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/intTen"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/hpMax"
+        app:layout_constraintTop_toBottomOf="@+id/textHP" />
+
+    <EditText
+        android:id="@+id/hpMax"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/intTen"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMax" />
+
+    <TextView
+        android:id="@+id/textStr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="87dp"
+        android:text="@string/strStr"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/strDex"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textStr" />
+
+    <TextView
+        android:id="@+id/textCon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/strCon"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDex" />
+
+    <TextView
+        android:id="@+id/textInt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="87dp"
+        android:text="@string/strInt"
+        android:textSize="35sp"
+        app:layout_constraintStart_toEndOf="@+id/modStr"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/numWis"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/intTen"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textWis"
+        app:layout_constraintTop_toBottomOf="@+id/numInt" />
+
+    <EditText
+        android:id="@+id/numInt"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="87dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/intTen"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textInt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/modInt"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="87dp"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="number"
+        android:text="@string/intZero"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/numInt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/numCha"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/intTen"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textCha"
+        app:layout_constraintTop_toBottomOf="@+id/numWis" />
+
+    <EditText
+        android:id="@+id/modWis"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="number"
+        android:text="@string/intZero"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/numWis"
+        app:layout_constraintTop_toBottomOf="@+id/modInt" />
+
+    <TextView
+        android:id="@+id/textCha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/strCha"
+        android:textSize="35sp"
+        app:layout_constraintStart_toEndOf="@+id/modCon"
+        app:layout_constraintTop_toBottomOf="@+id/textWis" />
+
+    <EditText
+        android:id="@+id/modCha"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="number"
+        android:text="@string/intZero"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/numCha"
+        app:layout_constraintTop_toBottomOf="@+id/modWis" />
+
+    <TextView
+        android:id="@+id/textWis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/strWis"
+        android:textSize="35sp"
+        app:layout_constraintStart_toEndOf="@+id/modDex"
+        app:layout_constraintTop_toBottomOf="@+id/textInt" />
+
+
+    <EditText
+        android:id="@+id/numStr"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="87dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/intTen"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/modStr"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="number"
+        android:text="@string/intZero"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/numStr"
+        app:layout_constraintTop_toBottomOf="@+id/playerName" />
+
+    <EditText
+        android:id="@+id/numDex"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/intTen"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numStr" />
+
+    <EditText
+        android:id="@+id/modDex"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="number"
+        android:text="@string/intZero"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/numDex"
+        app:layout_constraintTop_toBottomOf="@+id/modStr" />
+
+    <EditText
+        android:id="@+id/numCon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/intTen"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numDex" />
+
+    <EditText
+        android:id="@+id/modCon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="number"
+        android:text="@string/intZero"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/numCon"
+        app:layout_constraintTop_toBottomOf="@+id/modDex" />
+
+
+    <Button
+        android:id="@+id/btnAttack"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/btnAttack"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInventory"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/btnInventory"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAttack" />
+
+    <Button
+        android:id="@+id/btnNotes"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btnNotes"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnAttack"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btnUpdate"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnInventory"
+        app:layout_constraintTop_toBottomOf="@+id/btnNotes" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

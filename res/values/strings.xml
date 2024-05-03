@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Tabletop Character Manager</string>
+    <string name="strStr">Str</string>
+    <string name="strDex">Dex</string>
+    <string name="strCon">Con</string>
+    <string name="strInt">Int</string>
+    <string name="strWis">Wis</string>
+    <string name="strCha">Cha</string>
+    <string name="strHp">HP</string>
+    <string name="strMax">Max</string>
+    <string name="btnInventory">Weapon</string>
+    <string name="btnAttack">Attack!</string>
+    <string name="btnNotes">Notes</string>
+    <string name="btnUpdate">Save</string>
+    <string name="strName">Enter Name</string>
+    <string name="intTen">10</string>
+    <string name="intZero">0</string>
+    <string name="txtDieAmt">Die Amount</string>
+    <string name="txtDieSize">Die Size</string>
+    <string name="txtDamMod">Damage Modifier</string>
+    <string name="txtAtkMod">Attack Modifier</string>
+    <string name="txtFinesse">Finesse?</string>
+    <string name="txtHanded">Two-handed?</string>
+    <string name="txtMissile">Missile Weapon?</string>
+    <string name="txtWpnName">Weapon Name</string>
+</resources>
