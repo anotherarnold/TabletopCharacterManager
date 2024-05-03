@@ -1,0 +1,1 @@
+ A student project formerly published to Google Play, archived here because I didn't jump through all of Google's hoops and they closed my developer account. I don't have access to my original key anyways. For now, the source code will be archived.
